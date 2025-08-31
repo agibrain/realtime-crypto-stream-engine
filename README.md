@@ -71,12 +71,12 @@ We will use the following steps to run your project. Please ensure that your sub
 *   Please do not delete existing files in this repository, though you may modify them as needed.
 *   You are allowed to use any AI tools.
 *   If you have any additional comments or notes about your submission, please add them to a `COMMENT.md` file in the root of the repository.
-*   If you have any questions or need hints, please email `careers@projectpluto.com`.
+*   If you have any questions or need hints, please email `careers@projectpluto.co`.
 
 #### When you are ready to submit:
 
 Please send an email with the following details:
-*   **To:** `careers@projectpluto.com`
+*   **To:** `careers@projectpluto.co`
 *   **Subject:** `Fullstack Engineer Coding Assessment Submission`
 *   **Body:** Include a link to this repository.
 
