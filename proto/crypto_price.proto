@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package crypto_price.v1;
+
+// Service for streaming cryptocurrency prices
+service CryptoPriceService {
+  // Stream real-time prices for subscribed tickers
+  rpc StreamPrices(StreamPricesRequest) returns (stream PriceUpdate);
+  
+  // Add a ticker to the subscription list
+  rpc AddTicker(AddTickerRequest) returns (AddTickerResponse);
+  
+  // Remove a ticker from the subscription list
+  rpc RemoveTicker(RemoveTickerRequest) returns (RemoveTickerResponse);
+  
+  // Get list of currently subscribed tickers
+  rpc GetTickers(GetTickersRequest) returns (GetTickersResponse);
+}
+
+// Request to start streaming prices
+message StreamPricesRequest {}
+
+// Real-time price update
+message PriceUpdate {
+  string ticker = 1;
+  string price = 2;
+  int64 timestamp = 3;
+}
+
+// Request to add a ticker
+message AddTickerRequest {
+  string ticker = 1;
+}
+
+// Response for adding a ticker
+message AddTickerResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Request to remove a ticker
+message RemoveTickerRequest {
+  string ticker = 1;
+}
+
+// Response for removing a ticker
+message RemoveTickerResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Request to get current tickers
+message GetTickersRequest {}
+
+// Response with current tickers
+message GetTickersResponse {
+  repeated string tickers = 1;
+}

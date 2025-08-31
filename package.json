@@ -1,0 +1,22 @@
+{
+  "name": "crypto-price-streaming-app",
+  "version": "1.0.0",
+  "description": "Full-stack cryptocurrency price streaming application",
+  "scripts": {
+    "install-all": "pnpm install --recursive",
+    "generate": "cd proto && buf generate",
+    "dev:backend": "cd backend && pnpm dev",
+    "dev:frontend": "cd frontend && pnpm dev",
+    "start:backend": "cd backend && pnpm start",
+    "start:frontend": "cd frontend && pnpm start"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "devDependencies": {
+    "@bufbuild/buf": "^1.28.1",
+    "@bufbuild/protoc-gen-es": "^2.7.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.6.1"
+  }
+}

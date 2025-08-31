@@ -1,0 +1,30 @@
+{
+  "name": "crypto-price-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for cryptocurrency price streaming application",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "buf generate"
+  },
+  "dependencies": {
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-web": "^1.4.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.4.0",
+    "@bufbuild/protoc-gen-es": "^1.10.0",
+    "@bufbuild/protobuf": "^1.10.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0"
+  }
+}

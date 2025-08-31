@@ -1,0 +1,26 @@
+{
+  "name": "crypto-price-backend",
+  "version": "1.0.0",
+  "description": "Backend server for streaming cryptocurrency prices",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/simple-server.ts",
+    "start": "tsx src/simple-server.ts",
+    "build": "tsc",
+    "generate": "buf generate"
+  },
+  "dependencies": {
+    "@connectrpc/connect": "^1.4.0",
+    "@connectrpc/connect-node": "^1.4.0",
+    "@connectrpc/protoc-gen-connect-es": "^1.4.0",
+    "@bufbuild/protoc-gen-es": "^1.10.0",
+    "@bufbuild/protobuf": "^1.10.0",
+    "@bufbuild/buf": "^1.28.1",
+    "playwright": "^1.40.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}
